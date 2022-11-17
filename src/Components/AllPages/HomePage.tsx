@@ -17,6 +17,7 @@ export default function HomePage() {
         "Email":Email,
         "Password":Password,
     }
+
     const showToastMessage = () => {
         toast.warning('Student can`t login here!', {
             position: toast.POSITION.TOP_LEFT
@@ -38,6 +39,7 @@ export default function HomePage() {
 
   const Navigate= useNavigate();
   const [logIn, setLogin] = useState('Login');
+
 
 const handleChangeEmail = (event:any) => {
     setEmail(event.target.value);

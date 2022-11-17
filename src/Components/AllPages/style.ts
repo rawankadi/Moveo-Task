@@ -26,7 +26,7 @@ border-radius: 30px;
 
 export const PageDiv = styled.div`
 justify-content: left;
-height: 400px;
+height: 90%;
 border: 2px solid  #003366;
 margin: 10%;
 position: relative;
@@ -44,6 +44,7 @@ font-weight: bolder;
 `
 export const List = styled.div`
 margin: 5%;
+height: 30%;
 display: flex;
 justify-content: center;
 flex-direction: column;
@@ -51,19 +52,21 @@ flex-direction: column;
 
 export const BtnList = styled.button`
  background-color: white; 
+ width: 50%;
   color: black; 
   border: 2px solid #ff9633;
   padding: 10px 50px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
 `
 export const EmailBtn = styled.button`
+margin-top: 2%;
  background-color: white; 
   color: black; 
-  width: 150px;
+  width: 100%;
   border: 2px solid #004d99;
   padding: 5px 10px;
   text-align: center;
@@ -73,7 +76,10 @@ export const EmailBtn = styled.button`
   cursor: pointer;
 `
 export const Elements =styled.div`
-margin-top: 5%;
+/* display: flex; */
+/* align-items: center; */
+
+margin-top: 10%;
 `
 
 export const ButtonBox = styled.div`
@@ -139,6 +145,10 @@ margin-left: 27%;
 
 `
 export const ID = styled.div`
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin-left: 27%;
 `
 
 export const Input = styled.input`
@@ -148,7 +158,7 @@ height: 50%;
 
 export const SubmitBtn =styled.button`
 cursor: pointer;
-margin-left: 40%;
+margin-left: 35%;
 align-items: center;
 width: 100px;
 height: 30px;
@@ -157,13 +167,49 @@ color:white;
 border-radius: 6px ;
 `
 export const ListDiv =styled.div`
-margin-left: 35%;
-/* margin-top: 6%; */
-width: 200px;
-height: 180px;
-position:absolute;
-display:inline-block;
-justify-content: center;
+border: 2px solid  #003366;
+width: 35%;
+height: 18%;
 flex-direction: column;
 background-color: #cce6ff;
+margin-top: -100%;
+margin-left: 55%;
+position: absolute;
+`
+// export const Page =styled.div`
+
+// margin-left: 60%;
+// `
+
+export const CodePageDiv = styled.div`
+justify-content: left;
+height: 600px;
+border: 2px solid  #003366;
+margin: 10%;
+position: relative;
+box-shadow: rgba(255, 255, 128, .5);
+border-radius: 30px;
+`
+
+export const Title3 = styled.p`
+color:  #003366;
+margin-top: 5%;
+margin-left: 5%;
+display: flex;
+align-items: center;
+font-size: xX-large;
+font-weight: bolder;
+`
+export const CodeIn = styled.input`
+margin-left:5%;
+width: 80%;
+height: 40%;
+`
+
+export const Quis=styled.p`
+margin-left: 5%;
+font-size: medium;
+font-weight: bolder;
+
+color:rgb(77, 77, 218) ;
 `
