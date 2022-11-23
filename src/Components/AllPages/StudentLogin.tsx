@@ -20,7 +20,7 @@ export default function StudentLogin() {
 }
 
   const ValidateUser = () => {
-    axios.get("http://localhost:3001/api/Student/getStudent").then((response:any) => {setStudent(response.data)});
+    axios.get("https://shrouded-hollows-84733.herokuapp.com/api/Student/getStudent").then((response:any) => {setStudent(response.data)});
     const filter:any = Students.filter((Student:any) => Student.Email === userData.Email && Student.Password === userData.Password && Student.ID === userData.ID);
     if(filter.length >= 1){
       Navigate('/Code-Page');
