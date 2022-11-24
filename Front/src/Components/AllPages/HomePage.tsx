@@ -25,7 +25,7 @@ export default function HomePage() {
         }; 
 
     const ValidateUser = () => {
-        axios.get("hhttp://localhost:3001/api/Mentor/getMentor").then((response:any) => {setMentor(response.data)});
+        axios.get("https://shrouded-hollows-84733.herokuapp.com/api/Mentor/getMentor").then((response:any) => {setMentor(response.data)});
         const filter:any = Mentors.filter((Mentor:any) => Mentor.Email === userData.Email && Mentor.Password === userData.Password);
         if(filter.length >= 1){
             Navigate('/Loppy');

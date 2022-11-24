@@ -8,7 +8,7 @@ export default function StudentsList() {
     const [student, setStudent] = useState([])
  
         const getAllstudents =()=> {
-            axios.get("http://localhost:3001/api/Student/getStudent")
+            axios.get("https://shrouded-hollows-84733.herokuapp.com/api/Student/getStudent")
                 .then((res => {
                 //   console.log(res)
                 setStudent(res.data);
